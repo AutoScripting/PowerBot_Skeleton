@@ -4,6 +4,7 @@ import org.powerbot.script.methods.MethodContext;
 import project_name.util.Task;
 
 public class TaskClass extends Task {
+
     public TaskClass(MethodContext ctx) {
         super(ctx);
     }

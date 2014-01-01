@@ -3,7 +3,9 @@ package project_name;
 import org.powerbot.event.PaintListener;
 import org.powerbot.script.Manifest;
 import org.powerbot.script.PollingScript;
+import project_name.data.EnumData;
 import project_name.tasks.TaskClass;
+import project_name.tasks.TaskClassEX2;
 import project_name.util.Task;
 
 import java.awt.Graphics2D;
@@ -26,8 +28,8 @@ public class MainClass extends PollingScript implements PaintListener {
 
         // Multiple Tasks //
             taskArrayList.addAll(Arrays.asList(new TaskClass(ctx),
-                    new AnotherTaskClass(ctx),
-                    new AndAnotherTaskClass(ctx)));
+                    new TaskClassEX2(ctx, EnumData.COPPER),
+                    new TaskClassEX2(ctx, EnumData.IRON)));
     }
 
     @Override
