@@ -19,7 +19,6 @@ import java.util.*;
             version = 0)
 public class MainClass extends PollingScript implements PaintListener {
     private final ArrayList<Task> taskArrayList = new ArrayList<Task>();
-    private final Queue<Task> taskQueue = new ListIterator<Task>();
 
     @Override
     public void start() {
